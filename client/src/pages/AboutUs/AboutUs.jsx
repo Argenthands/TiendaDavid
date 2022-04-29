@@ -1,7 +1,8 @@
-import React from 'react'
-
+import './AboutUs.css';
 export function AboutUs() {
     return (
-        <div className='AboutUs'>AboutUs</div>
+        <div className='AboutUs'>
+            <h1>About Us</h1>
+        </div>
     )
 }

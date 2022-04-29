@@ -4,7 +4,9 @@ import { Route, Routes } from 'react-router-dom'
 //pages
 import {
 	Home,
-	AboutUs
+	AboutUs,
+	Products,
+	NotFound,
 } from './pages/index.js'
 //components
 import NavBar from './componets/NavBar/NavBar';
@@ -17,18 +19,18 @@ function App() {
 			<Routes>
 				<Route path='/' element={
 					<>
-						<h1>Soy el cuerpo principal del Home</h1>
+						<Home />
 					</>
 				}
 				/>
 				<Route path='AboutUs' element={
 					<>
-						<h1>Sobre Nosotros</h1>
+						<AboutUs />
 					</>
 				} />
 				<Route path='Products' element={
 					<>
-						<h1>Productos</h1>
+						<Products />
 					</>
 				} />
 				<Route path='Jewels' element={
@@ -44,6 +46,11 @@ function App() {
 				<Route path='Contact' element={
 					<>
 						<h1>Contactanos</h1>
+					</>
+				} />
+				<Route path='*' element={
+					<>
+						<NotFound />
 					</>
 				} />
 			</Routes>

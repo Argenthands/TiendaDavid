@@ -5,12 +5,12 @@
 }
 
 .Logo__Menu{
-    content: url('../../iamge/Menora-Menu-Logo.png');
+    content: url('../../image/Menora-Menu-Logo.png');
     width: 22vh;
     height: 19vh;
     height: 21vh;
     width: 20vh;
-    background: url('../../iamge/Fire-off-Menu.png');
+    background: url('../../image/Fire-off-Menu.png');
     background-position: center -40px;
     background-size: 40vh;
 }
@@ -25,28 +25,28 @@
 .Button__Meno__Base{
     height: 19vh;
     width: 20vh;
-    background: url('../../iamge/Menora-Menu-Base.png');
+    background: url('../../image/Menora-Menu-Base.png');
     background-position: center;
     background-size: 20vh;
 }
 .Button__Menu__Fire{
     height: 21vh;
     width: 20vh;
-    background: url('../../iamge/Menora-Menu-LLama.png');
+    background: url('../../image/Menora-Menu-LLama.png');
     background-position: center;
     background-size: 30vh;
 }
 .Button__Menu__Fire:hover{
     height: 21vh;
     width: 20vh;
-    background: url('../../iamge/Fire-on-Menu.png');
+    background: url('../../image/Fire-on-Menu.png');
     background-position: center;
     background-size: 30vh;
 }
 .active{
     height: 21vh;
     width: 20vh;
-    background: url('../../iamge/Fire-full-Menu.png');
+    background: url('../../image/Fire-full-Menu.png');
     background-position: center;
     background-size: 30vh;
 }
