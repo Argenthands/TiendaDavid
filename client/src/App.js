@@ -6,11 +6,15 @@ import {
 	Home,
 	AboutUs,
 	Products,
+	Location,
 	NotFound,
 } from './pages/index.js'
+
 //components
-import NavBar from './componets/NavBar/NavBar';
-import Footer from './componets/Footer/Footer'
+import {
+	NavBar,
+	Footer,
+} from './componets/index.js'
 
 function App() {
 	return (
@@ -40,7 +44,7 @@ function App() {
 				} />
 				<Route path='Location' element={
 					<>
-						<h1>Como llegar</h1>
+						<Location />
 					</>
 				} />
 				<Route path='Contact' element={
