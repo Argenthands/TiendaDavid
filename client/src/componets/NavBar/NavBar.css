@@ -1,0 +1,104 @@
+.NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Logo__Menu{
+    content: url('../../iamge/Menora-Menu-Logo.png');
+    width: 22vh;
+    height: 19vh;
+    height: 21vh;
+    width: 20vh;
+    background: url('../../iamge/Fire-off-Menu.png');
+    background-position: center -40px;
+    background-size: 40vh;
+}
+.Logo__Menu::before{
+
+}
+
+.Button__Menu{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.Button__Meno__Base{
+    height: 19vh;
+    width: 20vh;
+    background: url('../../iamge/Menora-Menu-Base.png');
+    background-position: center;
+    background-size: 20vh;
+}
+.Button__Menu__Fire{
+    height: 21vh;
+    width: 20vh;
+    background: url('../../iamge/Menora-Menu-LLama.png');
+    background-position: center;
+    background-size: 30vh;
+}
+.Button__Menu__Fire:hover{
+    height: 21vh;
+    width: 20vh;
+    background: url('../../iamge/Fire-on-Menu.png');
+    background-position: center;
+    background-size: 30vh;
+}
+.active{
+    height: 21vh;
+    width: 20vh;
+    background: url('../../iamge/Fire-full-Menu.png');
+    background-position: center;
+    background-size: 30vh;
+}
+
+@media (max-width: 700px){
+    .NavBar{
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Logo__Menu{
+        width: 65px;
+    }
+    .Button__Menu{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid darkgoldenrod;
+        border-radius: 10px;
+        padding: 3.5px;
+        margin: 10px;
+        overflow: hidden;
+        font-size: 50px;
+        max-width: 80%;
+    }
+    .Button__Menu:hover{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid white;
+        border-radius: 10px;
+        padding: 3.5px;
+        margin: 10px;
+        overflow: hidden;
+        font-size: 50;
+        max-width: 80%;
+    }
+    .active{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 4px solid goldenrod;
+        border-radius: 10px;
+        padding: 3.5px;
+        margin: 10px;
+        overflow: hidden;
+        font-size: 50px;
+        max-width: 80%;
+    }
+}

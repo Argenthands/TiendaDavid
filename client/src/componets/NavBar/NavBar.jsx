@@ -6,20 +6,45 @@ import './NavBar.css'
 export default function NavBar() {
     return (
         <>
-
-            <br />
-            <hr />
             <nav className='NavBar'>
-                <NavLink className={({isActive})=> isActive ? 'active' : 'Button__Menu'} to={'/'}>Inicio</NavLink>
-                <NavLink className={({isActive})=> isActive ? 'active' : 'Button__Menu'} to={'AboutUs'}>Sobre Nosotros</NavLink>
-                <NavLink className={({isActive})=> isActive ? 'active' : 'Button__Menu'} to={'Profesionales'}>Profesionales</NavLink>
-                <NavLink className={({isActive})=> isActive ? 'active' : 'Button__Menu'} to={'Servicios'}>Servicios</NavLink>
-                <NavLink className={({isActive})=> isActive ? 'active' : 'Button__Menu'} to={'Location'}>Ubicación</NavLink>
-                <NavLink className={({isActive})=> isActive ? 'active' : 'Button__Menu'} to={'Contact'}>Contacto</NavLink>
-            </nav>
-            <hr />
-            <br />
+                <div className='Button__Menu'>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'/'}>Inicio</NavLink>
+                    <div className='Button__Meno__Base'></div>
+                </div>
 
+                <div className='Button__Menu'>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'AboutUs'}>Sobre Nosotros</NavLink>
+                    <div className='Button__Meno__Base'></div>
+                </div>
+
+                <div className='Button__Menu'>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Products'}>Productos</NavLink>
+                    <div className='Button__Meno__Base'></div>
+                </div>
+
+                <div className='Button__Menu'>
+                    <div className='Logo__Menu'></div>
+                    <div className='Button__Meno__Base'></div>
+                </div>
+
+                <div className='Button__Menu'>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Jewels'}>Joyas</NavLink>
+                    <div className='Button__Meno__Base'></div>
+                </div>
+
+                <div className='Button__Menu'>
+
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Location'}>Ubicación</NavLink>
+                    <div className='Button__Meno__Base'></div>
+                </div>
+
+                <div className='Button__Menu'>
+
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Contact'}>Contacto</NavLink>
+                    <div className='Button__Meno__Base'></div>
+                </div>
+
+            </nav>
         </>
     )
 }
