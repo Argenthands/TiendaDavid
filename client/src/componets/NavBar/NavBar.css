@@ -5,17 +5,21 @@
 }
 
 .Logo__Menu{
-    content: url('../../image/Menora-Menu-Logo.png');
-    width: 22vh;
-    height: 19vh;
+    content: url('../../image/Logo.png');
     height: 21vh;
-    width: 20vh;
+    width: 21vh;
     background: url('../../image/Fire-off-Menu.png');
-    background-position: center -40px;
-    background-size: 40vh;
+    background-position: -90px -60px;
+    background-size: 43vh;
 }
-.Logo__Menu::before{
-
+.Text_Menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 50%;
 }
 
 .Button__Menu{

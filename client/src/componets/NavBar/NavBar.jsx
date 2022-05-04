@@ -6,17 +6,23 @@ export function NavBar() {
         <>
             <nav className='NavBar'>
                 <div className='Button__Menu'>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'/'}>Inicio</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'/'}>
+                        <h1 className="Text_Menu">Inicio</h1>
+                    </NavLink>
                     <div className='Button__Meno__Base'></div>
                 </div>
 
                 <div className='Button__Menu'>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'AboutUs'}>Sobre Nosotros</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'AboutUs'}>
+                        <h1 className="Text_Menu">Sobre Nosotros</h1>
+                    </NavLink>
                     <div className='Button__Meno__Base'></div>
                 </div>
 
                 <div className='Button__Menu'>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Products'}>Productos</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Products'}>
+                        <h1 className="Text_Menu">Productos</h1>
+                    </NavLink>
                     <div className='Button__Meno__Base'></div>
                 </div>
 
@@ -26,19 +32,25 @@ export function NavBar() {
                 </div>
 
                 <div className='Button__Menu'>
-                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Jewels'}>Joyas</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Jewels'}>
+                        <h1 className="Text_Menu">Joyería</h1>
+                    </NavLink>
                     <div className='Button__Meno__Base'></div>
                 </div>
 
                 <div className='Button__Menu'>
 
-                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Location'}>Ubicación</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Location'}>
+                        <h1 className="Text_Menu">Ubicación</h1>
+                    </NavLink>
                     <div className='Button__Meno__Base'></div>
                 </div>
 
                 <div className='Button__Menu'>
 
-                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Contact'}>Contacto</NavLink>
+                    <NavLink className={({ isActive }) => isActive ? 'active' : 'Button__Menu__Fire'} to={'Contact'}>
+                        <h1 className="Text_Menu">Contacto</h1>
+                    </NavLink>
                     <div className='Button__Meno__Base'></div>
                 </div>
 
