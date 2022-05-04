@@ -1,7 +1,6 @@
 const initialState = {
     products: [],
-    users: [],
-    test: ['pepe']
+    users: []
 }
 
 function rootReducer(state = initialState, action) {
