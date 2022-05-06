@@ -1,4 +1,8 @@
 .App {
-  text-align: center;
-  background: url('./image/blueBackground.jpg');
+	background-image: linear-gradient(
+		to right,
+		rgba(0, 0, 80, 2),
+		rgba(0, 0, 150, 2),
+		rgba(0, 0, 80, 2)
+	);
 }

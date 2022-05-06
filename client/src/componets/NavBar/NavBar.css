@@ -1,108 +1,79 @@
 .NavBar {
+    background: url('../../image/blueBackground.jpg');
+    background-size: cover;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.Logo__Menu{
-    content: url('../../image/Logo.png');
+.Logo__Menu {
     height: 21vh;
     width: 21vh;
     background: url('../../image/Fire-off-Menu.png');
-    background-position: -90px -60px;
-    background-size: 43vh;
+    background-position: center -3vh;
+    background-size: 35vh;
 }
-.Text_Menu{
+
+.Logo__Image {
+    height: 12vh;
+    content: url('../../image/Logo-Blanco.png');
+    position: absolute;
+    padding-left: 4vh;
+    padding-top: 7vh;
+}
+
+
+.Text_Menu {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    margin-top: 50%;
+    text-decoration: underline overline none;
+    margin-top: 11vh;
+    font-size: 3vh;
+    font-weight: bold;
+    width: 90%;
 }
 
-.Button__Menu{
+.Button__Menu {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
-.Button__Meno__Base{
-    height: 19vh;
-    width: 20vh;
-    background: url('../../image/Menora-Menu-Base.png');
-    background-position: center;
-    background-size: 20vh;
+
+.Button__Menu__Base {
+    background: url('../../image/Menora-Menu-soporte.png');
+    background-size: 20vh 11vh;
+    background-position: 0vh -2vh;
 }
-.Button__Menu__Fire{
+
+.Button__Menu__Fire {
     height: 21vh;
     width: 20vh;
-    background: url('../../image/Menora-Menu-LLama.png');
+    background: url('../../image/Fire-off-Menu.png');
     background-position: center;
-    background-size: 30vh;
+    background-size: 39vh 24vh;
+    text-decoration: none;
+    color: white;
 }
-.Button__Menu__Fire:hover{
+
+.Button__Menu__Fire:hover {
     height: 21vh;
     width: 20vh;
     background: url('../../image/Fire-on-Menu.png');
     background-position: center;
-    background-size: 30vh;
+    background-size: 39vh 24vh;
+    text-decoration: none;
+    color: #fff;
 }
-.active{
+
+.active {
     height: 21vh;
     width: 20vh;
     background: url('../../image/Fire-full-Menu.png');
     background-position: center;
-    background-size: 30vh;
+    background-size: 39vh 24vh;
+    text-decoration: none;
+    color: darkblue
 }
 
-@media (max-width: 700px){
-    .NavBar{
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .Logo__Menu{
-        width: 65px;
-    }
-    .Button__Menu{
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2.5px solid darkgoldenrod;
-        border-radius: 10px;
-        padding: 3.5px;
-        margin: 10px;
-        overflow: hidden;
-        font-size: 50px;
-        max-width: 80%;
-    }
-    .Button__Menu:hover{
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2.5px solid white;
-        border-radius: 10px;
-        padding: 3.5px;
-        margin: 10px;
-        overflow: hidden;
-        font-size: 50;
-        max-width: 80%;
-    }
-    .active{
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 4px solid goldenrod;
-        border-radius: 10px;
-        padding: 3.5px;
-        margin: 10px;
-        overflow: hidden;
-        font-size: 50px;
-        max-width: 80%;
-    }
-}
+@media (max-width: 700px) {}

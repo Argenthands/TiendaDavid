@@ -3,8 +3,12 @@ export function ProductCard({item}){
     return(
         <div className='ProductCard'>
             <h1>
-                {item}
+                {item.name}
             </h1>
+            <img src={item.image} alt="Producto" />
+            <p>
+                {item.price}
+            </p>
         </div>
     )
 }
